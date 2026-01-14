@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "検索結果フィルター",
+  "version": "1.0.0",
+  "description": "Google検索結果から指定したサイトを非表示にします",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.com/search*", "*://www.google.co.jp/search*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

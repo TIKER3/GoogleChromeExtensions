@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 400px;
+  background-color: #f5f5f5;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #4285f4;
+}
+
+h2 {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.input-section {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+#domainInput {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+#domainInput:focus {
+  outline: none;
+  border-color: #4285f4;
+}
+
+#addButton {
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#addButton:hover {
+  background-color: #3367d6;
+}
+
+#addButton:active {
+  background-color: #2851a3;
+}
+
+.list-section {
+  margin-bottom: 20px;
+}
+
+#domainList {
+  list-style: none;
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+#domainList::-webkit-scrollbar {
+  width: 8px;
+}
+
+#domainList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#domainList::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+#domainList::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.domain-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s;
+}
+
+.domain-item:last-child {
+  border-bottom: none;
+}
+
+.domain-item:hover {
+  background-color: #f0f0f0;
+}
+
+.domain-name {
+  font-size: 14px;
+  color: #333;
+  word-break: break-all;
+  flex: 1;
+  margin-right: 12px;
+}
+
+.delete-button {
+  padding: 6px 12px;
+  background-color: #ea4335;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+.delete-button:hover {
+  background-color: #d33828;
+}
+
+.delete-button:active {
+  background-color: #b92d1f;
+}
+
+.empty-message {
+  padding: 20px;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.info-section {
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.info-text {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.message {
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: opacity 0.3s;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
