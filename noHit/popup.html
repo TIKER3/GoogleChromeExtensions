@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>検索結果フィルター</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>検索結果フィルター</h1>
+
+    <div class="input-section">
+      <input
+        type="text"
+        id="domainInput"
+        placeholder="ブロックするドメインを入力（例: example.com）"
+      >
+      <button id="addButton">追加</button>
+    </div>
+
+    <div class="list-section">
+      <h2>ブロック中のドメイン</h2>
+      <ul id="domainList"></ul>
+      <p id="emptyMessage" class="empty-message">ブロックリストは空です</p>
+    </div>
+
+    <div class="info-section">
+      <p class="info-text">※ Google検索結果から指定したドメインを非表示にします</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
